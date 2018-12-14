@@ -24,4 +24,12 @@ public class MyController {
     }
 
 
+
+    @GetMapping("/me")
+    public String me(Model model)
+    {
+        model.addAttribute("name","Karolina");
+        model.addAttribute("surname","K.");
+        return "me";
+    }
 }
